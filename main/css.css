@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: rgb(228, 229, 231);
+    color: rgb(237, 237, 237);
+    font-family: "微軟正黑體", "Microsoft JhengHei", "Microsoft JhengHei UI", “微軟雅黑”, "Microsoft YaHei", "Microsoft YaHei UI", sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main {
+    padding: 20px;
+    min-height: 200px;
+    max-width: 700px;
+    border-radius: 20px;
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.refresher {
+    margin-top: auto;
+    padding: 10px 50px;
+    font-size: 26px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 1px 2px 2px rgb(213, 213, 213);
+    background-color: white;
+
+}
+
+.active .child {
+    color: rgba(0, 0, 0, 0);
+}
+
+.block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.block_top {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+}
+
+
+.par_1,
+.par_2 {
+    min-width: calc(100% - 10px);
+}
+
+.par_3 {
+    min-width: 120px;
+    max-width: 250px;
+    height: fit-content;
+    margin: auto;
+}
+.par {
+    text-align: center;
+    padding: 5px 10px 10px;
+    background-color: rgb(68, 68, 68);
+    box-shadow: 1px 2px 2px rgb(60, 60, 60);
+    border-radius: 8px;
+    max-width: 300px;
+}
+.par span{
+    min-width: 100px;
+    max-width: 200px;
+}
+.par div{
+    font-size: 100px;
+    line-height: 100px;
+    align-items: center;
+    min-width: 100px;
+    max-width: 200px;
+}
+.par h1{
+    font-size: 17px;
+    padding: 2px 0;
+}
+.par p{
+    font-size: 10px;
+    color: rgb(121, 121, 121);
+}
